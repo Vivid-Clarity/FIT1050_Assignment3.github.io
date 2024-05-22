@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fern Acers Nursery</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/favicon" href="images/fern logo.png">
+</head>
+<body>
+    
+
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img class="cs-logo" src="images/logo webp.webp" alt="Fern Acers Nursery logo"   aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. 
+                    This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen,
+                    which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Shop Plants
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Plant Caresheet
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                News
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="cs-button-solid cs-nav-button" onclick="openPopup()">Login / Sign Up</button>
+        </div>
+        
+        <div id="loginOverlay">
+            <div class="popup-box"> 
+                <h2>Login / Sign Up</h2>
+                <form class="form" method="post">
+                    <!-- Username -->
+                    <label class="form-label" for="name">Username</label>
+                    <input class="form-input" type="text" name="name" id="name" placeholder="Username">
+
+                    <!-- Password -->
+                    <label class="form-label" for="pass">Password</label>
+                    <input class="form-input" type="password" name="pass" id="pass" placeholder="Password">
+
+                    <!-- Submit Button -->
+                    <button class="form-button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </header>
+    
+    <!-- ============================================ -->
+    <!--                 Header Image                -->
+    <!-- ============================================ -->
+    <div class="header" id="top-header">
+        <img id="header-banner" src="images/fern-banners-free-cropped2.jpg"  alt="company header banner (fern leaves)" aria-hidden="true">
+        <img id="logo-image" src="images/logo and text.png" alt="Fern Acers Nursery logo"  aria-hidden="true" decoding="async">
+    </div>
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+    <section id="hero-1785">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">Open 7 days a Week!</h1>
+                <h2 class="cs-title">With Free Deliveries!</h2>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-background">
+            <img loading="lazy" decoding="async" src="images/flowers.jpg" alt="Hero background banner(beautiful fern garden)" width="1920" height="500" aria-hidden="true">
+        </picture>
+
+    </section>
+    
+    <!-- ============================================ -->
+    <!--                  Collection                  -->
+    <!-- ============================================ -->
+    <section id="collection-1577">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Shop Plants</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <span class="cs-category">Ferns</span>
+                        <picture class="cs-background" aria-hidden="true">
+                            <img loading="lazy" decoding="async"
+                                    src="images/fern.jpg"
+                                    width="365" height="201" alt="Potted Fern">
+                        </picture>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <span class="cs-category">Tree Ferns</span>
+                        <picture class="cs-background" aria-hidden="true">
+                            <img loading="lazy" decoding="async"
+                                    src="images/treefern.jpg" width="365"
+                                    height="201" alt="Tree Fern">
+                        </picture>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <span class="cs-category">Other Plants</span>
+                        <picture class="cs-background" aria-hidden="true">
+                            <img loading="lazy" decoding="async"
+                                    src="images/other plants.jpg"
+                                    width="365" height="201" alt="Other Potted plants">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+                                
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+    <section id="faq-1193">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Asked questions</span>
+                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <ul class="cs-faq-group">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                When are you open?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Do you have a physical market?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How much is delivery?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Lorem ipsum dolor sit amet
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Sit convallis nunc neque
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     CTA                      -->
+    <!-- ============================================ -->
+
+    <section id="cta-1394">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Subscribe</span>
+                <h2 class="cs-title">Subscribe for Newsletter</h2>
+                <p class="cs-text">
+                    Subscribe to our newsletter and stay up-to-date with the latest news, exclusive offers, and exciting updates.
+                </p>
+                <form class="cs-form" name="Contact Form" method="post">
+                    <input class="cs-input" type="email" id="cs-email-1394" name="find-us" placeholder="Email Address">
+                    <button class="cs-button-solid cs-submit" type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <img loading="lazy" decoding="async" src="images/flower-garden.jpg" alt="meeting" width="1920" height="486" aria-hidden="true">
+        </picture>
+    </section>
+                                
+                                
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-1121">
+        <div class="cs-container">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-flex">
+                        <h2 class="cs-h2">Great Service</h2>
+                        <p class="cs-item-text">
+                            Always available, with great service
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex">
+                        <h2 class="cs-h2">Quality First</h2>
+                        <p class="cs-item-text">
+                            All plants we see are grown with love and care
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-flex">
+                        <h2 class="cs-h2">Community Focues</h2>
+                        <p class="cs-item-text">
+                            We are happy to help you with any plant care advice
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--SVG Waves-->
+        <picture class="cs-background"><img class="cs-waves" src="images/fern-banners-free-cropped2.jpg" alt="Company Values background( fern leaves)" aria-hidden="true" loading="lazy" decoding="async" width="1920" height="616"></picture>
+    </section>
+                                
+
+    <!-- ============================================ -->
+    <!--                     Footer                   -->
+    <!-- ============================================ -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <h3>Fern Acres Nursery</h3>
+                <p>1052 Whittlesea-Kinglake Road, Kinglake West, 3757 VIC</p>
+            </div>
+            <div class="footer-item">
+                <h3>Contact Us</h3>
+                <p>Phone: 03 5786 5031</p>
+                <p>Email: sales@fernacres.com.au</p>
+            </div>
+            <div class="footer-item">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>                         
+</body>
+</html>
